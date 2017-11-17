@@ -1,0 +1,56 @@
+@import "./base";
+
+html,
+body,
+#root {
+    height: 100%;
+    min-height: 600px;
+}
+
+.container_tag {
+    .fixed;
+    transition: all 0.3s;
+    background-color: white;
+    
+    .MiddleLeftTitleContainer {
+        z-index: auto;
+    }
+    
+    .input_close {
+        .absolute;
+        left: 10px;
+        top: 4px;
+//      width: 40px;
+        height: 40px;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+//      background: url(../img/cuts.png) 0 -800px;
+        background-color: #f2f2f2;
+        color: #666;
+        font-size: 14px;
+    }
+    
+//  .input_close:active {
+//      border: #1AA0F3;
+//  }
+    .input_close:hover {
+        color: #999;
+    }
+}
+
+.show {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 48px;
+    overflow: initial;
+}
+
+.hidden {
+    width: 0;
+    height: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+}

@@ -1,0 +1,283 @@
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.fixed {
+  position: fixed;
+}
+.block {
+  display: block;
+}
+.inlineBlock {
+  display: inline-block;
+}
+.alpha0 {
+  background-color: rgba(0, 0, 0, 0);
+}
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sizeFull {
+  width: 100%;
+  height: 100%;
+}
+.sizeFullWidth {
+  width: 100%;
+}
+.sizeFullHeight {
+  height: 100%;
+}
+.container_group {
+  padding-top: 10px;
+  margin-top: 52px;
+}
+.container_group_nav {
+  width: calc(100% - 60px);
+  height: 40px;
+  background-color: #F2F2F2;
+  font-size: 14px;
+  color: #999;
+  padding-left: 60px;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+.container_group_nav span {
+  color: #1AA0F3;
+}
+.dgright {
+  width: 19%;
+  float: right;
+  border-left: 1px solid #F2F2F2;
+  height: 90vh;
+}
+.dgleftno,
+.dglefthave {
+  position: relative;
+  margin-left: 50px;
+  width: calc(80% - 50px);
+  float: left;
+}
+.dgleftno .dgLeftHaveLoading,
+.dglefthave .dgLeftHaveLoading {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  float: left;
+  background-image: url(https://cdns.007vin.com/img/veryhuo.com_gif.gif);
+  background-repeat: no-repeat;
+  background-size: 80px;
+  background-position: 50% 50%;
+  background-color: white;
+  display: none;
+}
+.dgleftno .dglefttitle,
+.dglefthave .dglefttitle {
+  font-size: 14px;
+  color: #999;
+  line-height: 18px;
+  padding-bottom: 10px;
+}
+.dgleftno .dglefttitle .dgleftnowords,
+.dglefthave .dglefttitle .dgleftnowords {
+  font-size: 14px;
+  color: #333;
+  line-height: 18px;
+}
+.dgleftno .dglefttitle,
+.dgleftnowords {
+  padding: 10px 0 10px 10px;
+}
+.dglefthave .dglefttitle,
+.dglefthave .dghavelist {
+  padding-left: 10px;
+}
+.dglefttitleloading {
+  background-image: url(https://cdns.007vin.com/img/veryhuo.com_gif.gif);
+  background-repeat: no-repeat;
+  background-size: 80px;
+  background-position: 50% 50%;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+.dgrighthead,
+.dgrightlist {
+  font-size: 14px;
+  color: #666;
+  height: 40px;
+  padding: 0 0 0 10px;
+}
+.dgrightlist {
+  cursor: pointer;
+}
+.dgrighthead {
+  color: #999;
+}
+.dgrighthead .dgrightheadreload {
+  float: right;
+  width: 75px;
+}
+.dgrighthead .dgrightheadreload .dgrightheadimg {
+  float: right;
+  margin-top: 1px;
+  width: 20px;
+  height: 20px;
+  background: url(https://cdns.007vin.com/img/icons_Search.png) no-repeat -8px -892px;
+  margin-right: 10px;
+}
+.dgrighthead .dgrightheadreload:hover {
+  cursor: pointer;
+}
+.dgrighthead .dgrightheadreload:hover .dgrightheadimg {
+  background-position-y: -932px;
+}
+.dgrouptotop {
+  width: 40px;
+  height: 40px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  font-size: 10px;
+  color: #666;
+  text-align: center;
+}
+.dgrouptotop .dgrouptotopimg {
+  width: 20px;
+  height: 20px;
+  background: url(https://cdns.007vin.com/img/icons_Search.png) no-repeat -10px -570px;
+  margin: 0 auto;
+}
+.dgrouptotop .dgrouptotopimg:hover {
+  background-position-y: -610px;
+}
+.dghavelistcontent {
+  min-height: 400px;
+}
+.dghavelisthead,
+.dghavelisttr {
+  background: #fff;
+}
+.dghavelisthead .dghavelisttd,
+.dghavelisttr .dghavelisttd {
+  min-height: 40px;
+  width: 22%;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #333;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.dghavelisthead .dghavelisttd:nth-child(1),
+.dghavelisttr .dghavelisttd:nth-child(1) {
+  width: 5%;
+  white-space: nowrap;
+}
+.dghavelisthead .dghavelisttd:nth-child(2),
+.dghavelisttr .dghavelisttd:nth-child(2) {
+  width: 40%;
+}
+.dghavelisthead .dghavelisttd:nth-child(3),
+.dghavelisttr .dghavelisttd:nth-child(3) {
+  width: 17%;
+}
+.dghavelisthead .dghavelisttd:nth-child(4),
+.dghavelisttr .dghavelisttd:nth-child(4) {
+  width: 23%;
+}
+.dghavelisthead .dghavelisttd:nth-child(5),
+.dghavelisttr .dghavelisttd:nth-child(5) {
+  width: 14%;
+  text-align: right;
+  white-space: nowrap;
+}
+.dghavelisthead {
+  height: 32px;
+  line-height: 32px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
+  margin-bottom: 4px;
+}
+.dghavelisthead .dghavelisttd {
+  height: 32px;
+  line-height: 32px;
+}
+.dghavelisttr {
+  min-height: 40px;
+}
+.dghavelisttr:hover {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
+  margin-bottom: 4px;
+  cursor: pointer;
+  transition: .2s all linear;
+}
+.paginationDiv {
+  display: block;
+  margin-top: 10px;
+  color: #535353;
+  line-height: 32px;
+  text-align: center;
+}
+.paginationDiv a {
+  float: left;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  vertical-align: middle;
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 4px;
+  background: #FFFFFF;
+  border: 1px solid #D8D8D8;
+  border-radius: 4px;
+}
+.paginationDiv .next,
+.paginationDiv .prev {
+  border: 1px solid #e5e5e5;
+  color: #999999;
+}
+.paginationDiv .firstandlast {
+  width: 60px;
+}
+.paginationDiv .next:hover,
+.paginationDiv .prev:hover {
+  background-color: #ddd;
+  border: 1px solid #ddd;
+}
+.paginationDiv .next:before,
+.paginationDiv .prev:before {
+  font-size: 14px;
+}
+.paginationDiv .disable.next,
+.paginationDiv .prev.disable {
+  border-color: #e5e5e5;
+  cursor: default;
+}
+.paginationDiv .disable.next:before,
+.paginationDiv .prev.disable:before {
+  color: #a0a0a0;
+  border-color: #337ab7;
+}
+.paginationDiv .num {
+  font-size: 12px;
+  color: #999;
+}
+.paginationDiv .num.current {
+  border: 1px solid #333333;
+  color: #333;
+}
+.paginationDiv .num:hover {
+  background-color: #ddd;
+  border-color: #ddd;
+  color: #1a1a1a;
+}

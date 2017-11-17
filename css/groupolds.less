@@ -1,0 +1,264 @@
+@import "./base";
+//父级设计
+.container_group {
+    padding-top: @pTen;
+    margin-top: 52px;
+}
+.container_group_nav{
+	width:e('calc(100% - 60px)');
+	height: @pTen*4;
+	background-color: #F2F2F2;
+    font-size: @pSeven*2;
+    color: @fcRemind;
+    padding-left: @pTen*6;
+    line-height:@pTen*4;
+    margin-bottom: @pTen;
+	span{
+        color:#1AA0F3;
+	}
+}
+.dgright {
+    width: 19%;
+    float: right;
+    border-left: 1px solid #F2F2F2;
+    height: 90vh;
+}
+
+.dgleftno,
+.dglefthave {
+    position: relative;
+    margin-left: 50px;
+    width: e('calc(80% - 50px)');
+    float: left;
+    .dgLeftHaveLoading{
+        position: absolute;
+        top: 0;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        float: left;
+        background-image: url(https://cdns.007vin.com/img/veryhuo.com_gif.gif);
+        background-repeat: no-repeat;
+        background-size: 80px;
+        background-position: 50% 50%;
+        background-color: white;
+        display: none;
+    }
+    .dglefttitle {
+//      font-family: PingFangSC-Regular;
+        font-size: @pSeven*2;
+        color: @fcRemind;
+        line-height: @pThree*6;
+        padding-bottom: @pTen;
+        .dgleftnowords {
+//          font-family: PingFangSC-Regular;
+            font-size: @pSeven*2;
+            color: @fcMain;
+            line-height: @pThree*6;
+        }
+    }
+}
+
+.dgleftno .dglefttitle,
+.dgleftnowords {
+    padding: @pTen 0 @pTen @pTen;
+}
+
+.dglefthave .dglefttitle,.dglefthave .dghavelist {
+    padding-left: @pTen;
+}
+.dglefttitleloading{
+	background-image: url(https://cdns.007vin.com/img/veryhuo.com_gif.gif);
+    background-repeat: no-repeat;
+    background-size: 80px;
+    background-position: 50% 50%;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+.dgrighthead,
+.dgrightlist {
+//  font-family: PingFangSC-Regular;
+    font-size: @pSeven*2;
+    color: @fcSub;
+    height: 40px;
+//  line-height: 40px;
+    padding: 0 0 0 10px;
+//  white-space:nowrap;
+//  text-overflow:ellipsis;   
+}
+.dgrightlist{
+	cursor: pointer;
+}
+.dgrighthead {
+    color: @fcRemind;
+    // margin-bottom: @pTen;
+    .dgrightheadreload{
+    	       float: right;
+    	       width: 75px;
+    	   	 .dgrightheadimg{
+    	   	 	float: right;
+            margin-top: 1px;
+    	   	    width: 20px;
+            height: 20px;
+            background: url(https://cdns.007vin.com/img/icons_Search.png) no-repeat -8px -892px;
+            margin-right: 10px;
+    	   }
+    }
+    .dgrightheadreload:hover{
+    	   cursor: pointer;
+    	   .dgrightheadimg{
+    	   	   background-position-y: -932px;
+    	   }
+    }
+}
+.dgrouptotop{
+	width:@pTen*4;
+	height:@pTen*4 ;
+	background: #FFFFFF;
+    box-shadow: 0px @pTwo @pTwo*2 0px rgba(0,0,0,0.40);
+    border-radius: @pTwo;
+    .fixed;
+    bottom: 0;
+    right: @pTen;
+    font-size: @pTen;
+    color: @fcSub;
+    text-align: center;
+    .dgrouptotopimg{
+    	    width: @pTen*2;
+        height: @pTen*2;
+        background: url(https://cdns.007vin.com/img/icons_Search.png) no-repeat -10px -570px;
+        margin: 0 auto;
+    }
+    .dgrouptotopimg:hover{
+    	   background-position-y: -610px;
+    }
+}
+//列表
+.dghavelistcontent{
+        min-height: @pTen*40;
+//      background: #F6F6F6;
+        // box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.20);
+    }
+.dghavelisthead,
+.dghavelisttr {
+    background: #fff;
+    .dghavelisttd {
+        min-height: @pTen*4;
+//      .inlineBlock;
+        width: 22%;
+        text-align: center;
+        vertical-align: middle;
+        font-size: @pSeven*2;
+        color: @fcMain;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .dghavelisttd:nth-child(1) {
+        width: 5%;
+        white-space:nowrap;
+    }
+    .dghavelisttd:nth-child(2) {
+        width: 40%;
+    }
+    .dghavelisttd:nth-child(3) {
+        width: 17%;
+    }
+    .dghavelisttd:nth-child(4) {
+        width: 23%;
+    }
+    .dghavelisttd:nth-child(5) {
+        width: 14%;
+        text-align: right;
+        white-space:nowrap;
+    }
+}
+
+.dghavelisthead {
+    height: 32px;
+    line-height: 32px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
+    margin-bottom: 4px;
+    .dghavelisttd {
+        height: 32px;
+        line-height: 32px;
+    }
+}
+.dghavelisttr{
+	min-height: @pTen*4;
+}
+
+.dghavelisttr:hover {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
+    margin-bottom: 4px;
+    cursor: pointer;
+    transition: .2s all linear;
+}
+
+//分页样式FF3232
+.paginationDiv {
+    .block;
+    margin-top: @pTen;
+    color: #535353;
+    line-height: 32px;
+    text-align: center;
+        a {
+        float: left;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        vertical-align: middle;
+        text-decoration: none;
+        cursor: pointer;
+        margin-right: @pTwo*2;
+        background: #FFFFFF;
+        border: 1px solid #D8D8D8;
+        border-radius: 4px;
+    }
+    .next,
+    .prev {
+//      background-color: #f3f4f8;
+        border: 1px solid #e5e5e5;
+        color: #999999;
+    }
+    .firstandlast{
+    	   //首页尾页
+    	   width: @pTen*6;
+    }
+    .next:hover,
+    .prev:hover {
+        background-color: #ddd;
+        border: 1px solid #ddd;
+    }
+    .next:before,
+    .prev:before {
+        font-size: 14px;
+    }
+    .disable.next,
+    .prev.disable {
+//      background-color: #f3f4f8;
+        border-color: #e5e5e5;
+        cursor: default;
+    }
+    .disable.next:before,
+    .prev.disable:before {
+        color: #a0a0a0;
+        border-color: #337ab7;
+    }
+    .num {
+//      font-family:PingFangSC-Regular;
+        font-size: @pTwo*6;
+        color: @fcRemind;
+    }
+    .num.current {
+        border: 1px solid #333333;
+        color: @fcMain;
+    }
+    .num:hover {
+        background-color: #ddd;
+        border-color: #ddd;
+        color: #1a1a1a;
+    }
+}

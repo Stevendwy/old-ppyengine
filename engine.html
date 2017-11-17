@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>零零汽搜索引擎</title>
+		<link rel="stylesheet" type="text/css" href="https://cdns.007vin.com/css/search.css" />
+		<link rel="stylesheet" type="text/css" href="https://cdns.007vin.com/css/showimageview.css" />
+		<link rel="stylesheet" type="text/css" href="https://cdns.007vin.com/css/cargroupmiddle.css" />
+		<link rel="stylesheet" type="text/css" href="https://cdns.007vin.com/css/group.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdns.007vin.com/css/floatwindow.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdns.007vin.com/css/modalcar.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdns.007vin.com/css/modalpart.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdns.007vin.com/css/cargroupmodel.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdns.007vin.com/css/tag.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdns.007vin.com/css/feedback.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdns.007vin.com/css/dialog.css">
+		<link rel="shortcut icon" href="https://cdns.007vin.com/img/logo.ico" />
+		<style type="text/css">
+			body {
+				margin: 0;
+				background-color: #fff;
+			}
+			
+			#root {
+				background-image: url(https://cdns.007vin.com/img/veryhuo.com_gif.gif);
+			    background-repeat: no-repeat;
+			    background-size: 80px;
+			    background-position: 50% 50%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="root"></div>
+		
+		<script type="text/javascript">
+			var version = 1;
+		</script>
+		<script src="https://cdns.007vin.com/js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://cdns.007vin.com/js/utils.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var isVIN = params.vin ? true : false
+			var isParts = params.p ? true : false
+			var isCar = !isVIN && !isParts ? true : false
+			var hasBlue = true
+			var vinChange = 1
+			var fristOnePart = false
+			var newvin = ""//获取vin
+			var truePart = 1
+			var sizerType=1//筛选类型
+		</script>
+		<script src="https://cdns.007vin.com/js/html2canvas.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://cdns.007vin.com/js/drawDom.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://cdns.007vin.com/js/engine.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$("body").on("click",".ClickFristItem>.MiddleRightContentListFooterItemContent",function(){
+				if($(this).children('div').hasClass('plus')){
+					$(this).parents(".listGroupToFloat").find(".MiddleRightContentListItemContainer").show();
+					$(this).children('div').removeClass("plus").addClass("minus")
+				}else if($(this).children('div').hasClass('minus')){
+					$(this).parents(".listGroupToFloat").find(".MiddleRightContentListItemContainer").hide();
+					$(this).parents(".MiddleRightContentListItemContainer").show();
+					$(this).children('div').removeClass("minus").addClass("plus")
+				}
+			})
+			$("body").on('click',".MiddleRightContentListItemContainer",function(){
+				$(".MiddleRightContentListItemContainer").css("color","#333333");
+				$(this).css("color","#1AA0F3");
+			})
+			// window.onload = function(){
+
+			//     
+			$(document).ready(function() { 
+			// put all your jQuery goodness in here. 
+				$(".inputContainer>input").focus();
+
+			}); 
+			// }
+		</script>
+	</body>
+</html>

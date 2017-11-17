@@ -1,0 +1,532 @@
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.fixed {
+  position: fixed;
+}
+.block {
+  display: block;
+}
+.inlineBlock {
+  display: inline-block;
+}
+.alpha0 {
+  background-color: rgba(0, 0, 0, 0);
+}
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sizeFull {
+  width: 100%;
+  height: 100%;
+}
+.sizeFullWidth {
+  width: 100%;
+}
+.sizeFullHeight {
+  height: 100%;
+}
+.container_group,
+.container_typein {
+  padding-top: 10px;
+  margin: 52px 0 0 60px;
+  min-width: 800px;
+  min-height: 500px;
+  background-color: white;
+}
+.dGroupL {
+  width: calc(70% - 20px);
+  float: left;
+  padding-bottom: 50px;
+  position: relative;
+}
+.dGroupL .dGroupLwithOutmes {
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(https://cdns.007vin.com/img/imgjustbg.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: white;
+}
+.dGroupL .dGroupLwithOutmes span {
+  font-size: 14px;
+  color: #333333;
+}
+.dGroupL .dgLeftHaveLoading {
+  position: fixed;
+  top: 0;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  float: left;
+  background-image: url(https://cdns.007vin.com/img/veryhuo.com_gif.gif);
+  background-repeat: no-repeat;
+  background-size: 80px;
+  background-position: 50% 50%;
+  background-color: white;
+  display: none;
+  z-index: 1;
+}
+.dGroupL .dGroupSearchType {
+  font-size: 14px;
+  color: #FF3232;
+  margin: 7px 0 0 0;
+}
+.dGroupL .dGroupSearch {
+  font-size: 14px;
+  color: #999;
+}
+.dGroupL .dGroupSearch .dGroupSearchPart {
+  float: right;
+}
+.dGroupL .dGroupSearch .dGroupSearchPart .dGroupSearchPartList {
+  display: inline-block;
+  cursor: pointer;
+  color: #666;
+}
+.dGroupL .dGroupSearch .dGroupSearchPart .dGroupSearchPartList .dGroupSearchPartListImg {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: top;
+  background: url(https://cdns.007vin.com/img/icons_Search.png) no-repeat -8px -1050px;
+}
+.dGroupL .dGroupSearch .dGroupSearchPart .dGroupSearchPartList:nth-child(2) .dGroupSearchPartListImg {
+  background-position-y: -1090px;
+}
+.dGroupL p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.dGroupL p .worldcolor {
+  color: #1AA0F3;
+}
+.dGroupL p span {
+  color: #1AA0F3;
+}
+.dGroupL img {
+  width: 110px;
+  height: 110px;
+  background: #FFFFFF;
+  cursor: pointer;
+  border: 1px solid #D8D8D8;
+  vertical-align: text-bottom;
+}
+.dGroupL ul {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.dGroupL ul li {
+  width: 100%;
+  margin: 9px;
+  font-size: 14px;
+  color: #666;
+}
+.dGroupL ul li div {
+  display: inline-block;
+}
+.dGroupL ul li div .worldcolor {
+  color: #1AA0F3;
+}
+.dGroupL ul li div span {
+  color: #1AA0F3;
+}
+.dGroupL ul li .clickdiv {
+  display: inline-block;
+  font-size: 14px;
+  color: #333333;
+  margin-left: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.dGroupL ul li .noclickdiv {
+  display: inline-block;
+  font-size: 14px;
+  color: #666666;
+  margin-left: 20px;
+  text-decoration: underline;
+}
+.dGroupR,
+.dGroupRightFlow {
+  width: calc(29% + 20px);
+  float: right;
+  border-left: 1px solid #f2f2f2;
+  min-height: 90vh;
+  padding-bottom: 50px;
+}
+.dGroupR .dGroupRightList,
+.dGroupRightFlow .dGroupRightList {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 150px;
+  overflow: hidden;
+}
+.dGroupR .dGroupRightList .dGroupRightListLoading,
+.dGroupRightFlow .dGroupRightList .dGroupRightListLoading {
+  background-image: url(https://cdns.007vin.com/img/veryhuo.com_gif.gif);
+  background-repeat: no-repeat;
+  background-size: 80px;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 100%;
+}
+.dGroupR .dGroupRightList .dGroupRightListTitle,
+.dGroupRightFlow .dGroupRightList .dGroupRightListTitle {
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+.dGroupR .dGroupRightList ul,
+.dGroupRightFlow .dGroupRightList ul {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.dGroupR .dGroupRightList ul li,
+.dGroupRightFlow .dGroupRightList ul li {
+  width: 100%;
+  font-size: 14px;
+  color: #666;
+}
+.dGroupR .dGroupRightList ul li div,
+.dGroupRightFlow .dGroupRightList ul li div {
+  display: inline-block;
+}
+.dGroupR .dGroupRightList ul li div:nth-child(1),
+.dGroupRightFlow .dGroupRightList ul li div:nth-child(1) {
+  width: 27%;
+  vertical-align: top;
+}
+.dGroupR .dGroupRightList ul li div:nth-child(2),
+.dGroupRightFlow .dGroupRightList ul li div:nth-child(2) {
+  width: 72%;
+}
+.dGroupRightFlow {
+  width: 0;
+  min-height: 90vh;
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+  overflow: auto;
+}
+.dGroupRightFlow .dGroupRightList .dGroupRightFloatImg {
+  width: 20px;
+  height: 20px;
+  background: url(https://cdns.007vin.com/img/icons_Search.png) no-repeat -8px -410px;
+  background-position-y: -1130px;
+  position: absolute;
+  left: 5px;
+  top: 45vh;
+}
+.dGroupRightFlow .dGroupRightList ul li {
+  margin-top: 10px;
+}
+.dGroupRightListTitleClick {
+  float: right;
+  cursor: pointer;
+}
+.dGroupRightListTitleClick span {
+  vertical-align: top;
+  margin-right: 3px;
+  font-size: 14px;
+  color: #999;
+  text-decoration: underline;
+}
+.dGroupRightListTitleClick .dGroupRightListImg {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url(https://cdns.007vin.com/img/icons_Search.png) no-repeat -8px -410px;
+}
+.dGroupRightListTitleClick .closeing {
+  background-position-y: -970px;
+}
+.dGroupRightListTitleClick .closeing:hover {
+  background-position-y: -1010px;
+}
+.dGroupRightListTitleClick .opening {
+  background-position-y: -410px;
+}
+.dGroupRightListTitleClick .opening:hover {
+  background-position-y: -450px;
+}
+.dGroupBottom p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+.dGroupBottom > div {
+  display: inline-block;
+  position: relative;
+  width: 33%;
+  font-size: 14px;
+  color: #666;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.dGroupBottom > div .tohide,
+.dGroupBottom > div .toshow {
+  position: absolute;
+  display: none;
+  top: -30px;
+  height: 30px;
+  background: #D8D8D8;
+  border-radius: 1px;
+  line-height: 30px;
+  text-align: center;
+  left: 9px;
+  padding: 0 10px 0 10px;
+  white-space: nowrap;
+}
+.dGroupBottom > div:hover .toshow {
+  display: block;
+}
+.dTypeinL {
+  width: calc(70% - 20px);
+  float: left;
+  padding-bottom: 50px;
+  position: relative;
+}
+.dTypeinL .typeInput {
+  border: 1px solid #D8D8D8;
+}
+.dTypeinL .typeInput .typeInputFitst {
+  background: #F2F2F2;
+  border: 0px solid #D8D8D8;
+  line-height: 40px;
+}
+.dTypeinL .typeInput .typeInputFitst span {
+  font-size: 14px;
+  color: #333333;
+  text-align: center;
+  width: 25%;
+  display: inline-block;
+}
+.dTypeinL .typeInput .typeInputFitst span:nth-child(2) {
+  width: 20%;
+}
+.dTypeinL .typeInput .typeInputSecond {
+  height: 44px;
+}
+.dTypeinL .typeInput .typeInputSecond input {
+  height: 40px;
+  width: 25%;
+  margin: 2px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  outline: 0;
+  border: 1px solid #666666;
+}
+.dTypeinL .typeInput .typeInputSecond span {
+  font-size: 10px;
+  color: #999;
+  width: 20%;
+  display: inline-block;
+}
+.dTypeinL .typeInput .typeInputSecond .typeInputsaveInput {
+  display: inline-block;
+  height: 40px;
+  width: 120px;
+  background: #1AA0F3;
+  border-radius: 2px;
+  text-align: center;
+  line-height: 40px;
+  margin: 2px;
+  float: right;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+.dTypeinL .typeInput .typeInputSecond ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  font-size: 14px;
+  color: #999999;
+}
+.dTypeinL .typeInput .typeInputSecond :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  font-size: 14px;
+  color: #999999;
+}
+.dTypeinL .typeInput .typeInputSecond ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  font-size: 14px;
+  color: #999999;
+}
+.dTypeinL .typeInput .typeInputSecond :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  font-size: 14px;
+  color: #999999;
+}
+.dTypeinL .typeBodyList {
+  margin-top: 20px;
+}
+.dTypeinL .typeBodyList .typeBodyListLeft {
+  height: 30px;
+}
+.dTypeinL .typeBodyList .typeBodyListLeft .typeBodyListRight {
+  display: inline-block;
+  float: right;
+}
+.dTypeinL .typeBodyList .typeBodyListLeft span {
+  font-size: 14px;
+  color: #333333;
+}
+.dTypeinL .typeBodyList .typeBodyConent {
+  background: #FFFFFF;
+  border: 1px solid #D8D8D8;
+}
+.dTypeinL .typeBodyList .typeBodyConent .typeBodyConentList:nth-child(1) {
+  background: #F2F2F2;
+}
+.dTypeinL .typeBodyList .typeBodyConent .typeBodyConentList > div {
+  display: inline-flex;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+  font-size: 14px;
+  color: #333333;
+}
+.dTypeinL .typeBodyList .typeBodyConent .typeBodyConentList > div:nth-child(1) {
+  width: 6%;
+}
+.dTypeinL .typeBodyList .typeBodyConent .typeBodyConentList > div:nth-child(2) {
+  width: 32%;
+  justify-content: flex-start;
+}
+.dTypeinL .typeBodyList .typeBodyConent .typeBodyConentList > div:nth-child(3) {
+  width: 17%;
+}
+.dTypeinL .typeBodyList .typeBodyConent .typeBodyConentList > div:nth-child(4) {
+  width: 37%;
+}
+.dTypeinL .typeBodyList .typeBodyConent .typeBodyConentList > div:nth-child(5) {
+  width: 8%;
+}
+.dTypeinL .typeBodyList .typeBodyConent .typeBodyConentHead > div:nth-child(2) {
+  justify-content: flex-start;
+  padding-left: 2%;
+  width: 30%;
+}
+.dTypeinR {
+  width: calc(29% + 20px);
+  float: right;
+  border-left: 1px solid #f2f2f2;
+  min-height: 90vh;
+  padding-bottom: 50px;
+}
+.dgrouptotop {
+  width: 40px;
+  height: 40px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  font-size: 10px;
+  color: #666;
+  text-align: center;
+}
+.dgrouptotop .dgrouptotopimg {
+  width: 20px;
+  height: 20px;
+  background: url(https://cdns.007vin.com/img/icons_Search.png) no-repeat -10px -570px;
+  margin: 0 auto;
+}
+.dgrouptotop .dgrouptotopimg:hover {
+  background-position-y: -610px;
+}
+.paginationDiv {
+  display: block;
+  margin-top: 10px;
+  color: #535353;
+  line-height: 32px;
+  text-align: center;
+}
+.paginationDiv a {
+  float: left;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  vertical-align: middle;
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 4px;
+  background: #FFFFFF;
+  border: 1px solid #D8D8D8;
+  border-radius: 4px;
+}
+.paginationDiv .next,
+.paginationDiv .prev {
+  border: 1px solid #e5e5e5;
+  color: red999;
+}
+.paginationDiv .firstandlast {
+  width: 60px;
+}
+.paginationDiv .next:hover,
+.paginationDiv .prev:hover {
+  background-color: #ddd;
+  border: 1px solid #ddd;
+}
+.paginationDiv .next:before,
+.paginationDiv .prev:before {
+  font-size: 14px;
+}
+.paginationDiv .disable.next,
+.paginationDiv .prev.disable {
+  border-color: #e5e5e5;
+  cursor: default;
+}
+.paginationDiv .disable.next:before,
+.paginationDiv .prev.disable:before {
+  color: #a0a0a0;
+  border-color: #337ab7;
+}
+.paginationDiv .num {
+  font-size: 12px;
+  color: #999;
+}
+.paginationDiv .num.current {
+  border: 1px solid #333333;
+  color: #333;
+}
+.paginationDiv .num:hover {
+  background-color: #ddd;
+  border-color: #ddd;
+  color: #1a1a1a;
+}
+.msgModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 160px;
+  height: 110px;
+  color: #fff;
+  display: flex;
+  display: -webkit-flex;
+  /* Safari */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  font-size: 14px;
+}

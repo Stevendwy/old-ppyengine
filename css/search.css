@@ -1,0 +1,798 @@
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.fixed {
+  position: fixed;
+}
+.block {
+  display: block;
+}
+.inlineBlock {
+  display: inline-block;
+}
+.alpha0 {
+  background-color: rgba(0, 0, 0, 0);
+}
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sizeFull {
+  width: 100%;
+  height: 100%;
+}
+.sizeFullWidth {
+  width: 100%;
+}
+.sizeFullHeight {
+  height: 100%;
+}
+body {
+  background: #fff;
+}
+#FeedBackButton {
+  display: none !important;
+}
+.pointer {
+  cursor: pointer;
+}
+.rCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  margin: auto;
+  z-index: 2;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container-content .container-searchs {
+  margin: 26px 0 55px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container-content .container-searchs .search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+  flex-direction: row;
+}
+.container-content .container-searchs .search .vinLength {
+  position: absolute;
+  top: 11px;
+  right: 100px;
+  width: 10px;
+  color: #999;
+}
+.container-content .container-searchs .search .closeIcon {
+  position: absolute;
+  top: 3px;
+  right: 70px;
+  width: 34px;
+  height: 34px;
+  background: url("https://cdns.007vin.com/img/icons_Search.png") no-repeat 0px -843px;
+  cursor: pointer;
+}
+.container-content .container-searchs .search .closeIcon:hover {
+  background: url("https://cdns.007vin.com/img/icons_Search.png") no-repeat 0px -803px;
+}
+.container-content .container-searchs .search .mum {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+}
+.container-content .container-searchs .search > span {
+  display: block;
+  width: 80px;
+  font-size: 14px;
+  color: #666;
+}
+.container-content .container-searchs .search .title {
+  text-align: right;
+  margin-right: 10px;
+}
+.container-content .container-searchs .search .start {
+  width: 40px;
+  height: 40px;
+  margin-right: 50px;
+}
+.container-content .container-searchs .search .remind {
+  position: relative;
+  background: url(https://cdns.007vin.com/img/cuts.png) 0 -1160px;
+}
+.container-content .container-searchs .search .remind .containr-remind {
+  position: absolute;
+  background: #FFFFFF;
+  border: 0px solid #D8D8D8;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  width: 280px;
+  height: 120px;
+  left: 40px;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container-content .container-searchs .search .remind .containr-remind > img {
+  width: 60px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.container-content .container-searchs .search .remind .containr-remind div {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.container-content .container-searchs .search .remind .containr-remind div span {
+  width: auto;
+  font-size: 12px;
+}
+.container-content .container-searchs .search .remind .containr-remind div .circle {
+  display: none;
+  position: absolute;
+  left: 3px;
+  top: 13px;
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background: #666;
+}
+.container-content .container-searchs .search .remind .containr-remind div .title {
+  margin-left: 10px;
+  display: block;
+  width: 100px;
+  text-align: left;
+  color: #666;
+}
+.container-content .container-searchs .search .remind .containr-remind div .content {
+  color: #1AA0F3;
+}
+.container-content .container-searchs .search input {
+  outline: 0;
+  padding-left: 10px;
+  width: 320px;
+  height: 40px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #d8d8d8;
+  color: #333;
+}
+.container-content .container-searchs .search ::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #999;
+}
+.container-content .container-searchs .search ::-moz-placeholder {
+  font-size: 14px;
+  color: #999;
+}
+.container-content .container-searchs .search .inputContainer {
+  position: relative;
+}
+.container-content .container-searchs .search .inputContainer .searchList {
+  position: absolute;
+  top: 40px;
+  z-index: 10;
+  width: 318px;
+  border: 1px solid #D8D8D8;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.container-content .container-searchs .search .inputContainer .searchList .resultListItem {
+  line-height: 40px;
+  cursor: pointer;
+  height: 40px;
+  background: #FFF;
+  transition: background .2s;
+  padding-left: 10px;
+  font-size: 14px;
+  color: #333333;
+}
+.container-content .container-searchs .search .inputContainer .searchList .resultListItem:hover {
+  background: #D8D8D8;
+}
+.container-content .container-searchs .search .inputContainer .searchList .active {
+  background: #D8D8D8;
+}
+.container-content .container-searchs .search .inputContainer > .container-switch {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+.container-content .container-searchs > .button {
+  width: 320px;
+  height: 40px;
+  color: white;
+  font-size: 14px;
+  background-color: #1AA0F3;
+  border: 0;
+  outline: 0;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.container-content .container-searchs > .button:hover {
+  background-color: #5ebcf6;
+}
+.container-content .container-searchs > .button:active {
+  background-color: #0089de;
+}
+.container-content .container-bottom {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container-content .container-bottom .remind-brands {
+  color: #666;
+  font-size: 12px;
+  margin-bottom: 10px;
+  display: none;
+}
+.container-content .container-bottom .brands {
+  margin-bottom: 12px;
+  display: none;
+}
+.container-content .container-bottom .copyright {
+  height: 40px;
+  width: 100%;
+  color: #999;
+  background-color: #f2f2f2;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container-content .container-bottom .copyright .pull {
+  width: 40px;
+  height: 40px;
+  background: url("https://cdns.007vin.com/img/cuts.png") 0 -560px;
+}
+.container_search .container_input {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 480px;
+  height: 480px;
+  margin: auto;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container_search .container_input .img_logo_blue {
+  height: 60px;
+  width: 95px;
+  margin-bottom: 20px;
+}
+.container_search .container_input .inputContainer {
+  display: flex;
+  margin-bottom: 10px;
+}
+.container_search .container_input .inputContainer .input {
+  width: 398px;
+  height: 30px;
+  font-size: 14px;
+  outline: none;
+  padding-left: 10px;
+  border: 1px solid #d8d8d8;
+  background: #FFFFFF;
+}
+.container_search .container_input .inputContainer .input::-webkit-input-placeholder {
+  color: #999;
+}
+.container_search .container_input .inputContainer .inputIcon {
+  width: 80px;
+  cursor: pointer;
+  background: #1AA0F3 url("https://cdns.007vin.com/img/icons_Search.png") no-repeat 20px -43px;
+  height: 34px;
+}
+.container_search .container_input .inputText {
+  color: #999999;
+  font-size: 14px;
+  align-self: flex-start;
+  position: absolute;
+  bottom: 15px;
+  right: -205px;
+}
+.container_search .container_input .inputText span {
+  color: #1AA0F3;
+}
+.top {
+  top: 0;
+  height: 320px;
+  transition: top 0.3s;
+  z-index: 3;
+}
+.up {
+  top: -400px;
+  height: 320px;
+  transition: top 0.3s;
+  z-index: 3;
+}
+.container_search_active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 860px;
+  background: #fff;
+  height: 52px;
+  z-index: 10;
+  background: #FAFAFA;
+}
+.container_search_active .container_input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 430px;
+  height: 52px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container_search_active .container_input .img_logo_blue {
+  display: none;
+}
+.container_search_active .container_input .graylogo {
+  display: block;
+  height: 50px;
+  cursor: pointer;
+  width: 60px;
+  background: url("https://cdns.007vin.com/img/icons_Search.png") no-repeat 10px 5px;
+}
+.container_search_active .container_input .inputContainer {
+  position: relative;
+  display: flex;
+}
+.container_search_active .container_input .inputContainer > .input {
+  width: 300px;
+  height: 30px;
+  padding-left: 40px;
+  font-size: 14px;
+  padding-left: 10px;
+  border: 1px solid #d8d8d8;
+  background: #FFFFFF;
+  outline: none;
+  padding-right: 55px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.container_search_active .container_input .inputContainer > .input::-webkit-input-placeholder {
+  color: #999;
+}
+.container_search_active .container_input .inputContainer .closeIcon {
+  position: absolute;
+  right: 90px;
+  width: 34px;
+  height: 34px;
+  background: url("https://cdns.007vin.com/img/icons_Search.png") no-repeat 0px -843px;
+  cursor: pointer;
+}
+.container_search_active .container_input .inputContainer .closeIcon:hover {
+  background: url("https://cdns.007vin.com/img/icons_Search.png") no-repeat 0px -803px;
+}
+.container_search_active .container_input .inputContainer .inputIcon {
+  position: absolute;
+  right: 60px;
+  width: 34px;
+  height: 34px;
+  background: url("https://cdns.007vin.com/img/icons_Search.png") no-repeat -4px -83px;
+  cursor: pointer;
+}
+.container_search_active .container_input .inputContainer .searchList {
+  position: absolute;
+  top: 33px;
+  left: 0;
+  z-index: 2;
+  width: calc(100% - 2px);
+  border: 1px solid #D8D8D8;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.container_search_active .container_input .inputContainer .searchList .resultListItem {
+  line-height: 40px;
+  cursor: pointer;
+  height: 40px;
+  background: #FFF;
+  transition: background .2s;
+  padding-left: 10px;
+  font-size: 14px;
+  color: #333333;
+}
+.container_search_active .container_input .inputContainer .searchList .resultListItem:hover {
+  background: #D8D8D8;
+}
+.container_search_active .container_input .inputContainer .searchList .active {
+  background: #D8D8D8;
+}
+.container_search_active .container_input .inputContainer > .container-switch {
+  position: absolute;
+  right: 1px;
+  top: 5px;
+}
+.container_search_active .container_input .inputText {
+  display: block;
+  color: #999999;
+  font-size: 14px;
+  align-self: flex-start;
+  position: absolute;
+  bottom: 15px;
+  right: -205px;
+}
+.container_search_active .container_input .inputText span {
+  color: #1AA0F3;
+}
+.container_search_active .container_utils .carInfoMain {
+  display: flex;
+}
+.container_search_active .container_utils .carInfoSub {
+  display: flex;
+}
+.container_utils {
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  height: 52px;
+  align-items: center;
+  justify-content: center;
+}
+.container_utils .login {
+  width: 70px;
+  margin-right: 10px;
+  position: static;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container_utils .login:hover {
+  color: #333;
+}
+.container_utils div {
+  font-size: 14px;
+  color: #666666;
+  transition: color .2s;
+  cursor: pointer;
+}
+.container_utils .historyUtil {
+  width: 100px;
+  z-index: 10;
+  height: 52px;
+  transition: all 0.2s;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container_utils .historyUtil:hover .historyIcon {
+  background: url("https://cdns.007vin.com/img/icons_Search.png") no-repeat 0px -452px;
+}
+.container_utils .historyUtil .historyIcon {
+  width: 28px;
+  height: 15px;
+  background: url("https://cdns.007vin.com/img/icons_Search.png") no-repeat 0px -412px;
+}
+.container_utils .active {
+  background: #F6F6F6;
+  box-shadow: 0px -3px 4px 0px rgba(0, 0, 0, 0.5);
+}
+.container_utils .userUtil {
+  margin-right: 10px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container_utils .userUtil:hover .userIcon {
+  display: none;
+  background: url("https://cdns.007vin.com/img/icons_Search.png") no-repeat -8px -370px;
+}
+.container_utils .userUtil .userIcon {
+  display: none;
+  width: 20px;
+  height: 20px;
+  background: url("https://cdns.007vin.com/img/icons_Search.png") no-repeat -8px -330px;
+  margin-right: 10px;
+}
+.container_utils .userUtil .container-logout {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 32px;
+  width: 100px;
+  height: 40px;
+  right: 0px;
+  border-bottom: 1px solid #d8d8d8;
+  border-radius: 4px;
+  background-color: white;
+}
+.container_utils .userUtil .container-logout > span {
+  font-size: 8px;
+}
+.container_utils .feedBack {
+  width: 70px;
+  margin-right: 10px;
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container_utils .carInfoSub {
+  width: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.container_utils .carInfoSub:hover .iconCarSub {
+  background-position: -10px -770px;
+}
+.container_utils .carInfoSub .iconCarSub {
+  width: 20px;
+  height: 20px;
+  background: url("https://cdns.007vin.com/img/icons_Search.png") no-repeat -10px -730px;
+  margin-right: 10px;
+}
+.container_utils .carInfoMain {
+  width: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.container_utils .carInfoMain:hover .iconCarMain {
+  background-position: -10px -690px;
+}
+.container_utils .carInfoMain .iconCarMain {
+  width: 20px;
+  height: 20px;
+  background: url("https://cdns.007vin.com/img/icons_Search.png") no-repeat -10px -650px;
+  margin-right: 10px;
+}
+.container_utils .carInfoMain:nth-child(1) {
+  justify-content: flex-end;
+  padding-right: 5px;
+}
+.historyContainer {
+  position: fixed;
+  width: 100px;
+  right: 0;
+  height: 100%;
+  transition: top .3s;
+  padding-top: 40px;
+  background: #F6F6F6;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.historyContainer .historyListItem {
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 14px;
+  color: #333333;
+}
+.fixedImgBackgroung {
+  width: 766px;
+  height: 205px;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  top: auto;
+  right: 0;
+  left: 0;
+  margin: auto;
+  background: url("../img/p_car.png") no-repeat 0 0;
+}
+.LoginFloatWindowContainer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 12;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.LoginFloatWindowContainer .LoginContainer {
+  position: relative;
+  width: 368px;
+  height: 296px;
+  background-color: white;
+}
+.LoginFloatWindowContainer .LoginContainer .LoginHeader {
+  position: relative;
+  width: 100%;
+  height: 54px;
+  border-bottom: 1px #DFDFDF solid;
+}
+.LoginFloatWindowContainer .LoginContainer .LoginHeader .LoginHeaderTitleImg {
+  position: relative;
+  left: 120px;
+  top: 0px;
+  width: auto;
+  height: auto;
+}
+.LoginFloatWindowContainer .LoginContainer .LoginHeader .LoginHeaderCancle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background: url(https://cdns.007vin.com/img/p_wo.png) 0 -600px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+.LoginFloatWindowContainer .LoginContainer .LoginHeader .LoginHeaderCancle:hover {
+  background: url(https://cdns.007vin.com/img/p_wo.png) 0 -480px;
+}
+.LoginFloatWindowContainer .LoginContainer .LoginContent {
+  position: relative;
+  width: 100%;
+  height: 241px;
+}
+.LoginFloatWindowContainer .LoginContainer .LoginContent .memberPosition {
+  margin-top: 10px;
+  left: 20px;
+  border-radius: 4px;
+}
+.LoginFloatWindowContainer .LoginContainer .LoginContent .loginInput {
+  position: relative;
+  margin-top: 10px;
+  left: 20px;
+  border-radius: 4px;
+  width: 315px;
+  height: 40px;
+  display: block;
+  font-size: 14px;
+  border: 1px #D8D8D8 solid;
+  padding-left: 10px;
+}
+.LoginFloatWindowContainer .LoginContainer .LoginContent .LoginContentUserName {
+  position: relative;
+  margin-top: 10px;
+  left: 20px;
+  border-radius: 4px;
+  width: 315px;
+  height: 40px;
+  display: block;
+  font-size: 14px;
+  border: 1px #D8D8D8 solid;
+  padding-left: 10px;
+}
+.LoginFloatWindowContainer .LoginContainer .LoginContent .LoginContentUserName:hover {
+  border: 1px #45C0FF solid;
+}
+.LoginFloatWindowContainer .LoginContainer .LoginContent .LoginContentUserName:focus {
+  border: 1px #45C0FF solid;
+}
+.LoginFloatWindowContainer .LoginContainer .LoginContent .clear_username,
+.LoginFloatWindowContainer .LoginContainer .LoginContent .clear_password {
+  position: absolute;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: url(https://cdns.007vin.com/img/p_wo.png) 0 -680px;
+  display: none;
+  cursor: pointer;
+}
+.LoginFloatWindowContainer .LoginContainer .LoginContent .clear_username:hover,
+.LoginFloatWindowContainer .LoginContainer .LoginContent .clear_password:hover {
+  width: 40px;
+  height: 40px;
+  background: url(https://cdns.007vin.com/img/p_wo.png) 0 -640px;
+}
+.LoginFloatWindowContainer .LoginContainer .LoginContent .clear_username {
+  top: 3px;
+}
+.LoginFloatWindowContainer .LoginContainer .LoginContent .clear_password {
+  top: 57px;
+}
+.LoginFloatWindowContainer .LoginContainer .LoginContent .LoginContentUserPassword {
+  position: relative;
+  margin-top: 10px;
+  left: 20px;
+  border-radius: 4px;
+  width: 315px;
+  height: 40px;
+  display: block;
+  font-size: 14px;
+  border: 1px #D8D8D8 solid;
+  padding-left: 10px;
+}
+.LoginFloatWindowContainer .LoginContainer .LoginContent .LoginContentUserPassword:hover {
+  border: 1px #45C0FF solid;
+}
+.LoginFloatWindowContainer .LoginContainer .LoginContent .LoginContentUserPassword:focus {
+  border: 1px #45C0FF solid;
+}
+.LoginFloatWindowContainer .LoginContainer .LoginContent .loginRemember {
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+}
+.LoginFloatWindowContainer .LoginContainer .LoginContent .LoginContentRemember {
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+  width: 14px;
+  height: 14px;
+  margin-left: 20px;
+  border-radius: 4px;
+  border: 1px #999 solid;
+}
+.LoginFloatWindowContainer .LoginContainer .LoginContent .LoginContentRememberPassword {
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+  color: #999;
+  font-size: 14px;
+  top: -4px;
+  margin-left: 10px;
+}
+.LoginFloatWindowContainer .LoginContainer .LoginContent .LoginContentButton {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  left: 20px;
+  border-radius: 4px;
+  width: 328px;
+  height: 40px;
+  background-color: #1aa0f3;
+  border: 0;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+.LoginFloatWindowContainer .LoginContainer .LoginContent .LoginContentForgetPassword {
+  position: relative;
+  color: #1aa0f3;
+  border-bottom: 1px #1aa0f3 solid;
+  width: 70px;
+  line-height: 16px;
+  left: 20px;
+  margin-top: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
